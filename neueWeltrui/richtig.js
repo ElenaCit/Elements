@@ -101,6 +101,12 @@ const player = new Box({
     }
 )
 
+jump;  {
+    
+    imageSrc = 'C:\Users\saaru\pixel animation\pixel-animation\neueWeltrui\pou Kopie.png'
+    framesMax =  1
+}
+
 
 
 const enemy = new Box({
@@ -206,6 +212,10 @@ function animate(){                         //create animate function
 
     player.velocity.x = 0
     enemy.velocity.x = 0
+
+    if (player.velocity -y < 0) {
+        player.image = player.sprites.jum.image
+    }
 
     // player movement
 
