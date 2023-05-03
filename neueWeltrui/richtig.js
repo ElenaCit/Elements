@@ -37,7 +37,7 @@ class Box {                         //creating a class called Box
         c.fillStyle = this.color
         c.fillRect(this.position.x, this.position.y, this.width, this.height);
 
-        const img = document.querySelector("#croco")
+        const img = document.querySelector("#character")
 
         c.drawImage(
             img,
